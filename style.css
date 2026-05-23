@@ -1,0 +1,499 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1e2a3e;
+    background-color: #fefcf5;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, .logo-text, .section-title {
+    font-family: 'Playfair Display', serif;
+}
+
+/* palette inspirante : vert profond + or doux + terre africaine */
+:root {
+    --church-gold: #c9a03d;
+    --church-green: #1f5e3a;
+    --church-dark: #2c3e2f;
+    --church-cream: #fff9ef;
+    --church-soft: #f4ede4;
+    --shadow-sm: 0 10px 30px -10px rgba(0,0,0,0.08);
+}
+
+/* navbar stylisée avec logo amélioré */
+.navbar {
+    background: rgba(255, 252, 240, 0.96);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    transition: all 0.3s;
+    padding: 0.5rem 0;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--church-green) !important;
+    letter-spacing: -0.3px;
+}
+.logo-img-nav {
+    height: 48px;
+    width: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.navbar-brand span {
+    color: var(--church-gold);
+    font-style: italic;
+}
+.nav-link {
+    font-weight: 500;
+    color: #2c3e2f !important;
+    margin: 0 0.3rem;
+    transition: 0.2s;
+}
+.nav-link:hover {
+    color: var(--church-gold) !important;
+    transform: translateY(-2px);
+}
+.btn-outline-gold {
+    border: 1.5px solid var(--church-gold);
+    color: var(--church-green);
+    border-radius: 40px;
+    padding: 0.4rem 1.3rem;
+    font-weight: 600;
+    transition: 0.25s;
+}
+.btn-outline-gold:hover {
+    background: var(--church-gold);
+    border-color: var(--church-gold);
+    color: #fff;
+}
+
+
+.hero {
+    background: linear-gradient(80deg, rgba(13, 44, 84, 0.95) 0%,
+     rgba(13, 44, 84, 0.65) 40%, rgba(13, 44, 84, 0.15) 100%, transparent 100%), 
+                url('image/cbca_mulongwe_eglise.png');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 0;
+    color: white;
+    position: relative;
+
+    /* background-position: 220% center; */
+    background-repeat: no-repeat;
+    min-height: 380px;
+    
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin: 1.2rem auto;
+    font-weight: 400;
+    backdrop-filter: blur(2px);
+}
+.btn-gold {
+    background: var(--church-gold);
+    color: #1e2a3e;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+.btn-gold:hover {
+    background: #b68b2c;
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* section commune */
+.section-padding {
+    padding: 5rem 0;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--church-dark);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    background: var(--church-gold);
+    border-radius: 5px;
+}
+.text-center .section-title:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* cartes services & événements */
+.card-service, .event-card {
+    border: none;
+    background: white;
+    border-radius: 28px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    height: 100%;
+}
+.card-service:hover, .event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
+}
+.card-service .card-body, .event-card .card-body {
+    padding: 2rem 1.5rem;
+}
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: #eef5e9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.2rem auto;
+    color: var(--church-green);
+    font-size: 2rem;
+}
+.event-img-top {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.4s;
+}
+.event-card:hover .event-img-top {
+    transform: scale(1.02);
+}
+
+/* section pasteur & église */
+.pastor-card, .church-card {
+    background: var(--church-cream);
+    border-radius: 40px;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+.pastor-img, .church-exterior-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 15px 25px -10px rgba(0,0,0,0.1);
+}
+.church-exterior-img {
+    border-radius: 30px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* galerie images */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.gallery-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 24px;
+}
+.gallery-item:hover .gallery-img {
+    transform: scale(1.04);
+}
+
+
+
+
+/* Hero small pour les pages internes */
+.hero-small {
+  background: linear-gradient(105deg, rgba(30,42,62,0.85) 0%, rgba(31,94,58,0.85) 100%), 
+              url('image/cbca_mulongwe_eglise.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 0;
+}
+
+/* Styles pour les formulaires */
+.form-control, .form-select {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--church-gold);
+  box-shadow: 0 0 0 0.25rem rgba(201, 160, 61, 0.25);
+}
+
+/* Ratio pour les vidéos et cartes */
+.ratio {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Styles spécifiques pour la page contact */
+.contact-info h5 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: var(--church-dark);
+}
+
+
+/* Style pour le lien actif dans la navbar */
+.navbar .nav-link.active {
+    color: var(--church-gold) !important;
+    font-weight: 600;
+    position: relative;
+}
+
+.navbar .nav-link.active:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--church-gold);
+}
+
+/* Animations */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+/* ========== FOOTER ========== */
+.footer {
+    /* background: #0F2A20; */
+    color: white;
+    padding: 60px 0 20px;
+    background-color: #222258;
+}
+
+.footer-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-about {
+    flex: 2;
+    min-width: 250px;
+}
+
+.footer-about h3 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    color: white;
+    background: rgba(255,255,255,0.1);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.footer-social a:hover {
+    background: #D4AF37;
+    transform: translateY(-3px);
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-links h4, .footer-contact h4 {
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #D4AF37;
+    padding-left: 5px;
+}
+
+.footer-contact p {
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-contact p i {
+    color: #D4AF37;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.5);
+    font-size: 0.9rem;
+}
+
+
+
+/* responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+    font-size: 2.3rem;
+    }
+    .section-padding {
+    padding: 3rem 0;
+    }
+    .navbar-brand {
+    font-size: 1.2rem;
+    }
+    .logo-img-nav {
+    height: 38px;
+    }
+} 
+
+
+/* ===== STYLE DU CHATBOT ===== */
+
+/* Bouton flottant (le rond 🤖) */
+#chatbot-toggle {
+    position: fixed; /* reste fixe à l'écran */
+    bottom: 25px; /* distance du bas */
+    right: 25px; /* distance de droite */
+    background: var(--church-gold); /* couleur or */
+    color: white;
+    border: none;
+    border-radius: 50%; /* rond */
+    width: 65px;
+    height: 65px;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 9999; /* au-dessus de tout */
+}
+#chatbot-toggle:hover{
+    background-color: #9547ee;
+}
+
+/* Conteneur principal du chatbot */
+#chatbot-container {
+    position: fixed; /* reste visible même en scroll */
+    bottom: 100px;
+    right: 25px;
+    width: 320px;
+    background: var(--church-cream); /* couleur du site */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: none; /* caché au départ */
+    flex-direction: column;
+    z-index: 9999;
+}
+
+/* En-tête du chatbot */
+#chatbot-header {
+    background: var(--church-green); /* vert du site */
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; /* espace entre titre et X */
+}
+
+/* Corps du chatbot */
+#chatbot-body {
+    padding: 10px;
+}
+
+/* Zone des messages */
+#chatbot-messages {
+    height: 200px; /* hauteur fixe */
+    overflow-y: auto; /* scroll si trop de messages */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Champ de saisie */
+#chatbot-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+/* Bouton envoyer */
+#chatbot-body button {
+    width: 100%;
+    padding: 8px;
+    background: var(--church-gold);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
