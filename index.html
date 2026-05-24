@@ -1,45 +1,385 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3è CBCA Mulongwe | Église au cœur de l'Afrique</title>
+  <!-- Bootstrap 5 CSS + Icons + Google Fonts + Font Awesome + Lightbox pour galerie -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <!-- Lightbox2 (pour galerie pro) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>A propos de moi</h1>
 
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Nemo, incidunt. Quis neque vero incidunt impedit, quibusdam 
-        eius obcaecati perferendis, officia laborum quod libero animi praesentium 
-        harum inventore? Eaque a porro officiis qui eveniet neque obcaecati quidem 
-        architecto dolorum laborum? Voluptatibus labore iste, necessitatibus 
-        repellat illo excepturi, iusto cum nobis cupiditate tempore veniam eos 
-        perferendis minus, architecto obcaecati! Animi iure, sit vel alias maxime 
-        voluptates molestias illum ex, facilis, porro repellat?
-    </p>
-
-    <h2>Mes hobbies</h2>
-        <ul>
-            <li>lire les livres sur la technologie</li>
-            <li>jouer de la guitare</li>
+  <!-- NAVBAR avec LOGO (personnalisé, image intégrée via emojis + icône temporaire, mais nous créons un vrai logo SVG/placeholder) -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="image/logo_cbca.png" alt="Logo 3è CBCA Mulongwe" class="logo-img-nav">
+        <span>3è CBCA <span>Mulongwe</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#accueil.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="cultes.html">Cultes & Activités</a></li>
+          <li class="nav-item"><a class="nav-link" href="evenements.html">Événements</a></li>
+          <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="contact.html" class="btn btn-outline-gold btn-sm">Nous rejoindre</a>
+          </li>
         </ul>
-    
-    <h2>Mes objectifs</h2>
-        <ol>
-            <li>Apprendre HTML et CSS</li>
-            <li>Creer un portifolio</li>
-            <li>Devenir un developpeur profectionnel</li>
-        </ol>
+      </div>
+    </div>
+  </nav> 
 
-    <h2>Liens utiles</h2>
-    <p>Voici quelques sites que je trouve interessants : </p>
-        <ul>
-            <li><a href="">Akili School : L'ecole du numerique</a></li>
-            <li><a href="">Me contacter</a></li>
-            <li><a href="">Telecharger ce cours</a></li>
-        </ul>
+  
+  <!-- HERO -->
+  <section id="accueil" class="hero">
+    <div class="container hero-content text-center">
+      <h1>3è Communauté Baptiste au Centre de l'Afrique</h1>
+      <p class="lead" style="font-size: 15px;">Kwa uzuri na utaratibu</p> <br>
+      <a href="cultes.html" class="btn btn-gold mt-3 me-2"><i class="fas fa-church me-2"></i>Nos cultes</a>
+      <a href="contact.html" class="btn btn-outline-light mt-3"><i class="fas fa-heart me-2"></i>Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- À PROPOS avec photo de l’église extérieure -->
+  <section id="a-propos" class="section-padding">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill"><i class="fas fa-cross me-1"></i> Notre mission</span>
+          <h2 class="section-title mb-4">Une communauté ancrée dans la parole de Dieu</h2>
+          <p class="lead text-muted">La 3è CBCA Mulongwe est une église vibrante située en République démocratique du Congo, au cœur de l'Afrique. Nous formons une famille spirituelle dévouée à la propagation de l'Évangile, au service de nos communautés.</p>
+          <p>Nous croyons en un Dieu d'amour, de pardon et de transformation. Nos portes sont ouvertes à toutes les générations. Rejoignez-nous pour grandir ensemble dans la foi, la louange et l'action sociale.</p>
+          <div class="row mt-4">
+            <div class="col-6">
+              <i class="fas fa-hands-helping fs-1" style="color: var(--church-gold);"></i>
+              <h5 class="mt-2">Action sociale</h5>
+              <small>Accompagnement des démunis, orphelins et initiatives communautaires.</small>
+            </div>
+            <div class="col-6">
+              <i class="fas fa-bible fs-1" style="color: var(--church-gold);"></i>
+              <h5 class="mt-2">École biblique</h5>
+              <small>Formation et disciples pour une foi enracinée.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="church-card p-0 overflow-hidden">
+            <img src="image/cbca_mulongwe_eglise.png" alt="Photo extérieure de l'église CBCA Mulongwe" class="church-exterior-img" style="border-radius: 32px;">
+            <div class="p-3 text-center bg-white rounded-bottom">
+              <i class="fas fa-location-dot text-success me-1"></i> 3e CBCA Paroisse Mulongwe - Q. ROMBE1, Avenue du 30 Juin, Mulongwe
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTES & ACTIVITÉS -->
+  <section id="cultes" class="section-padding" style="background: #faf5eb;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Nos rencontres & horaires</h2>
+        <p class="text-muted mt-3">Vivez des moments uniques de louange, d'enseignement et de communion fraternelle.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-sun"></i></div><h4>Culte du Dimanche</h4><p>Puissant moment de louange et prédication.</p><hr><i class="fas fa-clock"></i> 08h00 – 11h30</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-sun"></i></div><h4>Culte Matinale</h4><p>Puissant moment de prière.</p><hr><i class="fas fa-clock"></i> Du lundi au Samedi de 5h30 à 6h10</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-sun"></i></div><h4>Culte du samedi</h4><p>Chaque samedi nous rendons visite aux membres de l'Eglise.</p><hr><i class="fas fa-clock"></i> De 6h00 à 7h00</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-praying-hands"></i></div><h4>Rencontre de prière</h4><p>Intercession pour Mulongwe, l'Afrique et le monde.</p><hr><i class="fas fa-calendar-alt"></i> Vendredi 16h00</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-users"></i></div><h4>École du dimanche</h4><p>Enfants, ados et jeunes adultes.</p><hr>Dimanche 7h00</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-music"></i></div><h4>Chorale “Umoja”</h4><p>Répétition chorale hebdomadaire.</p><hr>Dimanche 12h 30 <br>Samedi 15h00</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-music"></i></div><h4>Chorale “Mwamga mkuu”</h4><p>Répétition chorale hebdomadaire.</p><hr>Dimanche 12h 30 <br>Samedi 15h00</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-music"></i></div><h4>Chorale “Women”</h4><p>Répétition chorale hebdomadaire.</p><hr>Dimanche 12h 30 <br>Samedi 15h00</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-music"></i></div><h4>Chorale “Wokovu”</h4><p>Répétition chorale hebdomadaire.</p><hr>Dimanche 12h 30 <br>Samedi 15h00</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-hand-holding-heart"></i></div><h4>Groupes de maison</h4><p>Étude biblique en petits groupes.</p><hr>Jeudi 18h30</div></div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card-service h-100"><div class="card-body text-center"><div class="icon-circle"><i class="fas fa-child"></i></div><h4>Ministère des enfants</h4><p>Activités ludiques et spirituelles.</p><hr>Dimanche matin</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ÉVÉNEMENTS (images et présentations) -->
+  <section id="evenements" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Événements à venir & récents</h2>
+        <p class="text-muted">Conférences, camps, journées de récolte et actions communautaires</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="event-card">
+            <img src="image/Représentant.jpg" class="event-img-top" alt="Conférence de réveil">
+            <div class="card-body">
+              <h5>🔥 Conférence du Représentant legal</h5>
+              <p class="text-muted"><i class="far fa-calendar-alt"></i> 06-07 Mai 2026</p>
+              <p>Deux jours de feu de l'Esprit, enseignements puissants et prière démoniaque. Invités : Pasteurs poste Uvira en general.</p>
+              <span class="badge bg-success">Entrée libre</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="event-card">
+            <img src="image/file_00000000022071f89c588788530ba541.png" class="event-img-top" alt="Camp de la jeunesse">
+            <div class="card-body">
+              <h5>🤖Formation Jeunesse “IA GENERATIVE”</h5>
+              <p class="text-muted"><i class="far fa-calendar-alt"></i> 26 Avril 2026</p>
+              <p>L'IA au service de la foi, de la communauté et de l'avenir de la jeunesse d'Uvira.</p>
+              <p>By Ngombo MIBARAKA MICHAEL-Coordinateur Hub Tech DRC</p>
+              <span class="badge bg-warning text-dark">Participation gratuite</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="event-card">
+            <img src="image/IMG-20260517-WA0102.jpg" class="event-img-top" alt="Journée des femmes">
+            <div class="card-body">
+              <h5>🌸 Journée des enfants ECODIM</h5>
+              <p class="text-muted"><i class="far fa-calendar-alt"></i> 31 Mars 2026</p>
+              <p>Célébration des enfants Chretiens <br> Sous la direction du président ECODIM Mzee KIDUMU</p>
+              <p></p>
+              <span class="badge bg-info text-dark">Avec repas inclus</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="event-card">
+            <img src="image/IMG-20260517-WA0106.jpg" class="event-img-top" alt="Journée des femmes">
+            <div class="card-body">
+              <h5>🌸 Journée de la Femme Chrétienne</h5>
+              <p class="text-muted"><i class="far fa-calendar-alt"></i> 08 Mars 2026</p>
+              <p>Conférence sur “La femme vertueuse au cœur de l’Afrique”, partage d'expériences et prière. <br> Sous la conduite de mama AIMERANCE MUKUYANO</p>
+              <span class="badge bg-info text-dark">Avec repas inclus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="event-card">
+            <img src="image/IMG-20260517-WA0098.jpg" class="event-img-top" alt="Journée des femmes">
+            <div class="card-body">
+              <h5>🌸 Journée de la Femme Chrétienne</h5>
+              <p class="text-muted"><i class="far fa-calendar-alt"></i> 08 Mars 2026</p>
+              <p>Conférence sur “La femme vertueuse au cœur de l’Afrique”, partage d'expériences et prière. <br> Sous la conduite de mama AIMERANCE MUKUYANO</p>
+              <span class="badge bg-info text-dark">Avec repas inclus</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="event-card">
+            <img src="image/IMG-20260517-WA0077.jpg" class="event-img-top" alt="Journée des femmes">
+            <div class="card-body">
+              <h5>📗 Journée de la jeunesse</h5>
+              <p class="text-muted"><i class="far fa-calendar-alt"></i> 15 Mai 2026</p>
+              <p>Soirée de prière et de gloire- Sous conduite du President IBRAHIM K.</p>
+              <span class="badge bg-info text-dark">prière</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE PHOTOS (professionnelle) avec images d'événements, d'église et culte -->
+  <section id="galerie" class="section-padding" style="background: #f9f7f0;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Galerie de la vie de l'église</h2>
+        <p class="text-muted">Moments de culte, baptêmes, événements spéciaux et fraternité</p>
+      </div>
+      <div class="row g-3">
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Grand rassemblement dominical">
+            <div class="gallery-item"><img src="image/Rev. Pascal.jpg" class="gallery-img" alt="Culte dominical"></div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Grand rassemblement dominical">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0128.jpg" class="gallery-img" alt="Culte dominical"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Grand rassemblement dominical">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0098.jpg" class="gallery-img" alt="Culte dominical"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Grand rassemblement dominical">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0126.jpg" class="gallery-img" alt="Culte dominical"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Conférence 2025">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0115.jpg" class="gallery-img" alt="Conférence église"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Extérieur du temple CBCA Mulongwe">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0068.jpg" class="gallery-img" alt="Photo église"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Louange et adoration collective">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0103.jpg" class="gallery-img" alt="Groupe de louange"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Camp de la jeunesse">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0101.jpg" class="gallery-img" alt="Camp jeunesse"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Dîner fraternel communautaire">
+            <div class="gallery-item">
+              <img src="image/IMG-20260517-WA0114.jpg" class="gallery-img" alt="Repas partagé"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Extérieur du temple CBCA Mulongwe">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0072.jpg" class="gallery-img" alt="Photo église"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Camp de la jeunesse">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0079.jpg" class="gallery-img" alt="Camp jeunesse"></div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <a href="galerie.html" data-lightbox="church-gallery" data-title="Camp de la jeunesse">
+            <div class="gallery-item"><img src="image/IMG-20260517-WA0077.jpg" class="gallery-img" alt="Camp jeunesse"></div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+              <h3>3è CBCA MULONGWE</h3>
+              <p>communauté Baptiste au Centre de l'Afrique.</p>
+              <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=61588190810548" class="btn btn-outline-light btn-lg rounded-circle mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtube.com/@hubtechdrc?si=TBOERxqZ5r6x81qi" class="btn btn-outline-light btn-lg rounded-circle mx-2"><i class="fab fa-youtube"></i></a>
+                <a href="https://chat.whatsapp.com/GgwyBeBTqSu8wBcDb2ZMI4?mode=gi_t" class="btn btn-outline-light btn-lg rounded-circle mx-2"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+            <div class="footer-links">
+              <h4>Liens rapides</h4>
+              <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="cultes.html">Cultes</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Nous trouver</h4>
+              <p><i class="bi bi-geo-alt"></i> Mulongwe, Avenue du 30 juin</p>
+              <p><i class="bi bi-telephone"></i> +243 970096597</p>
+              <p><i class="bi bi-envelope"></i> cbcamulongwe@gmail.com</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2026 Hub Tech DRC version 1.0 | Tous droits réservés</p>
+          </div>
+      </div>
+  </footer>
+
+    <!-- ===== ASSISTANT DIGITAL CBCA ===== -->
+
+  <!-- Conteneur principal du chatbot -->
+  <div id="chatbot-container">
+
+    <!-- En-tête du chatbot -->
+    <div id="chatbot-header">
+      Assistant CBCA <!-- Titre affiché -->
+      
+      <!-- Bouton pour fermer le chatbot -->
+      <span onclick="toggleChat()">✖</span>
+    </div>
+
+    <!-- Corps du chatbot -->
+    <div id="chatbot-body">
+
+      <!-- Zone où les messages apparaissent -->
+      <div id="chatbot-messages">
+        <!-- Message d'accueil automatique -->
+        <p><strong>Assistant :</strong> Bonjour 👋 Bienvenue à la 3è CBCA Mulongwe. Comment puis-je vous aider ?</p>
+      </div>
+
+      <!-- Champ de saisie utilisateur -->
+      <input 
+        type="text" 
+        id="chatbot-input" 
+        placeholder="Posez votre question..."
+      >
+
+      <!-- Bouton envoyer -->
+      <button onclick="sendMessage()">Envoyer</button>
+    </div>
+  </div>
+
+  <!-- Bouton flottant pour ouvrir le chatbot -->
+  <button id="chatbot-toggle" onclick="toggleChat()">
+    🤖
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <script src="script.js"></script>
+  <script src="knowledge.js"></script>
 </body>
 </html>
+
+
